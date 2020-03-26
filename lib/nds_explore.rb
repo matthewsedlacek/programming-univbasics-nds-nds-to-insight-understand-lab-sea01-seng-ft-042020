@@ -14,5 +14,6 @@ i = 0
 while i < all_movies.length do
   movie_list = all_movies[i][:title]
   puts movie_list
+  i += 1
   end
 end
