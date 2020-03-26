@@ -9,5 +9,9 @@ pp nds
 end
 
 def print_first_directors_movie_titles
-pp directors_database
-end
+row_index = 0
+while row_index < directors_database.length do
+  if 
+  puts "Row #{row_index} has #{vm[row_index]} columns"
+ end
+ end
