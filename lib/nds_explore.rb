@@ -9,5 +9,5 @@ pp nds
 end
 
 def print_first_directors_movie_titles
-  directors_database[:name][:movies][:title]
+  if directors_database[:name][:movies][:title] == "Steven Spielberg"
 end
