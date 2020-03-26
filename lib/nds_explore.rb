@@ -9,12 +9,18 @@ pp nds
 end
 
 def print_first_directors_movie_titles
+outer_results = []
 row_index = 0
 while row_index < directors_database.count do
   element_index = 0
+  inner_results = []
   while element_index < directors_database[row_index].count do
-    puts directors_database[row_index][element_index]
+    if spice_rack[row_index][element_index][0] == "Steven Spielberg"
+      inner_results << spice_rack[row_index][element_index]
+    end
     element_index += 1
   end
+  outer_results << inner_results
   row_index += 1
+end
 end
