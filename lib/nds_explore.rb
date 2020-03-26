@@ -15,8 +15,8 @@ while row_index < directors_database.count do
   element_index = 0
   inner_results = []
   while element_index < directors_database[row_index].count do
-    if spice_rack[row_index][element_index][0] == "Steven Spielberg"
-      inner_results << spice_rack[row_index][element_index]
+    if directors_database[row_index][element_index][0] == "Steven Spielberg"
+      inner_results << directors_database[row_index][element_index]
     end
     element_index += 1
   end
